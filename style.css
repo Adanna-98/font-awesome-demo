@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 235, 245);
+    overflow-x: hidden;
+    width:83%;
+    margin: 0 auto;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth; 
+}
+
+.grid{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.grid div{
+    border: none;
+    border-radius: 17px;
+    padding: 2rem 3rem 2rem 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-wrap: wrap;
+}
+
+.grid div h4{
+    color: rgb(36, 47, 75);
+    margin: 0 0 0.5rem;
+    font-weight: 1000px;
+    text-spacing-trim: 1.4 rem;
+
+}
+
+.grid div p{
+    font-size: 13px;
+    color: rgb(66, 77, 116);
+    line-height: 1.4;
+    margin-top: 1rem;
+    font-family: "Poppins", serif;
+    word-spacing: 3px;
+}
+
+.icon:hover{
+    background-color: rgb(177, 151, 252) ;
+}
+
+.logo:hover{
+
+    background-color:rgb(255, 212, 58) ;
+}
+
+.game:hover{
+    background-color: rgb(99, 230, 190);
+}
+
+.fine-tune:hover{
+    background-color:rgb(228, 153, 246);
+}
+
+@media(max-width:800px) {
+
+    body{
+        
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .grid{
+        margin-top: 30px;
+        display: block;
+    }
+
+    .grid div{
+        border: none;
+        border-radius: 13px;
+        padding: 1rem 3rem 1rem 70px;
+        margin: 2rem 0;
+    }
+
+    .grid div p{
+        font-size: 12px;
+        line-height: 1.4;  
+    }
+
+    
+}
